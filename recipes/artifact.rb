@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: fh-appstore
+# Cookbook Name:: fh-dataman
 # Recipe:: source
 #
 # Copyright 2015, FeedHenry
@@ -9,6 +9,6 @@
 
 include_recipe "fh-artifact"
 
-feedhenry_node_artifact('fh-appstore') do
-  service_name 'fh-appstore'
+feedhenry_node_artifact('fh-dataman') do
+  service_name 'fh-dataman'
 end

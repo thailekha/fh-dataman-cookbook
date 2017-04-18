@@ -1,2 +1,2 @@
-default['fh-appstore']['install_method'] = 'artifact'
-default['fh-appstore']['conf_file'] = '/etc/feedhenry/fh-appstore/conf.json'
+default['fh-dataman']['install_method'] = 'artifact'
+default['fh-dataman']['conf_file'] = '/etc/feedhenry/fh-dataman/conf.json'

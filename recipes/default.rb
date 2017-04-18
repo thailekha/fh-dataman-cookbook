@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: fh-appstore
+# Cookbook Name:: fh-dataman
 # Recipe:: default
 #
 # Copyright 2015, FeedHenry
@@ -9,7 +9,7 @@
 
 include_recipe 'nodejs_feedhenry'
 
-directory '/etc/feedhenry/fh-appstore' do
+directory '/etc/feedhenry/fh-dataman' do
   owner node['account']['daemon']['user']
   group node['account']['default']['group']
   mode '770'
@@ -17,13 +17,13 @@ directory '/etc/feedhenry/fh-appstore' do
   action :create
 end
 
-service 'fh-appstore' do
+service 'fh-dataman' do
   action :nothing
   supports :status => true, :start => true, :stop => true, :restart => true
-  subscribes :restart, "template[#{node['fh-appstore']['conf_file']}]", :delayed
+  subscribes :restart, "template[#{node['fh-dataman']['conf_file']}]", :delayed
 end
 
-directory '/var/log/feedhenry/fh-appstore' do
+directory '/var/log/feedhenry/fh-dataman' do
   mode 0750
   owner node['account']['daemon']['user']
   group node['account']['default']['group']
@@ -31,5 +31,5 @@ directory '/var/log/feedhenry/fh-appstore' do
   action :create
 end
 
-include_recipe "fh-appstore::#{node['fh-appstore']['install_method']}"
-include_recipe 'fh-appstore::conf'
+include_recipe "fh-dataman::#{node['fh-dataman']['install_method']}"
+include_recipe 'fh-dataman::conf'

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: fh-appstore
+# Cookbook Name:: fh-dataman
 # Recipe:: source
 #
 # Copyright 2015, FeedHenry
@@ -8,6 +8,6 @@
 #
 include_recipe 'fh-artifact'
 
-feedhenry_node_src('fh-appstore') do
-  repo_name 'fh-appstore'
+feedhenry_node_src('fh-dataman') do
+  repo_name 'fh-dataman'
 end

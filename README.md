@@ -1,7 +1,7 @@
-Fh-appstore Cookbook
+fh-dataman Cookbook
 ====================
 
-Installs/Configures fh-appstore
+Installs/Configures fh-dataman
 
 Requirements
 ------------
@@ -24,19 +24,19 @@ Attributes
 Recipes
 -------
 
-### fh-appstore::artifact
+### fh-dataman::artifact
 
 
 
-### fh-appstore::conf
+### fh-dataman::conf
 
 
 
-### fh-appstore::default
+### fh-dataman::default
 
 
 
-### fh-appstore::source
+### fh-dataman::source
 
 
 

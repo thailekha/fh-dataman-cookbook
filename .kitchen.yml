@@ -1,5 +1,5 @@
 #Managed by Chef, DO NOT EDIT MANUALLY
-#To update run: bundle exec thor cookbook generate_kitchen -c fh-appstore
+#To update run: bundle exec thor cookbook generate_kitchen -c fh-dataman
 ---
 driver:
   name: vagrant
@@ -25,4 +25,4 @@ suites:
       - recipe[feedhenry_common::env]
       - recipe[feedhenry_common::hosts]
       - recipe[feedhenry_common::users]
-      - recipe[fh-appstore::default]
+      - recipe[fh-dataman::default]

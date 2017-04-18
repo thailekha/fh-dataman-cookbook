@@ -1,4 +1,4 @@
-default['fh-appstore']['repository'] = 'git@github.com:fheng/fh-appstore.git'
-default['fh-appstore']['revision'] = 'master'
-default['fh-appstore']['git']['action'] = :checkout
-default['fh-appstore']['src']['dir'] = node['feedhenry_common']['src']
+default['fh-dataman']['repository'] = 'git@github.com:feedhenry/fh-dataman.git'
+default['fh-dataman']['revision'] = 'master'
+default['fh-dataman']['git']['action'] = :checkout
+default['fh-dataman']['src']['dir'] = node['feedhenry_common']['src']

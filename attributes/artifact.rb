@@ -1,2 +1,2 @@
-default['fh-appstore']['version'] = '2.0.3'
-default['fh-appstore']['build'] = '130'
+default['fh-dataman']['version'] = '0.1.1'
+default['fh-dataman']['build'] = '130'
